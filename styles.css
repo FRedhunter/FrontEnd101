@@ -1,0 +1,39 @@
+
+body
+{
+    color: rgb(74, 87, 89);
+    background-color:EDAFB8;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(222, 219, 210);
+    padding: 10px;
+}
+li
+{
+    color: rgb(237, 175, 184);
+}
+
+h1
+{
+    color: rgb(176, 196, 177);
+
+}
+h3
+{
+    color: rgb(176, 196, 177);
+
+}
+img
+{
+    margin: auto;
+    padding: 150px;
+}
+div
+{
+    background-color: rgb(222, 219, 210);
+}
+
+p
+{
+    background-color: rgba(222, 219, 210, 0.5);
+}
