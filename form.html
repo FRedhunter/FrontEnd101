@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1> Forms Demo</h1>
+    <form action="/index.html">
+        <div>
+            <label for="username">User Name:    </label>
+            <input type="username" name="username" id="username" placeholder="user name"/>
+        </div>
+        <div>
+            <label for="password">Password:     </label>
+            <input type="password" name="password" id="password" placeholder="password"/>
+        </div>
+        <div>
+            <label for="Color">Color:    </label>
+            <input type="color" name="color" id="color" placeholder="color"/>
+        </div>
+        <div>
+            <label for="number">Number:      </label>
+            <input type="number" name="number" id="number" placeholder="0"/>
+        </div>
+        <button>Sign In</button>
+    </form>
+    <h2>Search</h2>
+    <div>
+        <form action="https://wwww.reddit.com/search">
+            <div>
+                <label for="redditSearch">Reddit:</label>
+                <input type="text" name="q" id="redditSearch" placeholder="Reddit"/>
+                <input type="submit" value="Search Reddit"/>
+            </div>
+            </form>
+            <form action="https://www.google.com.tr/search">
+            <div>
+                <label for="googleSearch">Google:</label>
+                <input type="text" name="q" id="googleSearch" placeholder="Google"/>
+                <input type="submit" value="Search Google"/>
+            </div>
+        </form>
+        <form action="https://www.youtube.com/results">
+            <div>
+                <label for="youtubeSearch">Youtube:</label>
+                <input type="text" name="search_query" id="youtubeSearch" placeholder="Youtube"/>
+                <input type="submit" value="Search Youtube"/>
+            </div>
+        </form>
+    </div>
+<h2>Daha Fazla Input</h2>
+<form action="/birds">
+<input type="checkbox" name="tos" id="agree" checked/>
+<label for="agree">Kabul Ediyorum</label>
+<div>
+    <label for="xs">XS</label>
+    <input type="radio" name="size" id="xs" value="xs">
+    <label for="s">S</label>
+    <input type="radio" name="size" id="s" value="s">
+    <label for="m">M</label>
+    <input type="radio" name="size" id="m" value="m">
+</div>
+<div>
+    <label for="selectArea">Favori Hayvanınız Nedir?</label>
+    <select name="animal" id="selectArea">
+        <option value="cat" disabled>Kedi</option>
+        <option value="dog">Köpek</option>
+        <option value="fish">Balık</option>
+        <option value="wolf" selected>Kurt</option>
+    </select>
+</div>
+<div>
+    <label for="loveMeter">Love Meter: </label>
+    <input type="range" name="loveMeter" id="loveMeter" min="0" max="300" value="150" step="15">
+</div>
+<div>
+    <br/>
+    <label for="lifeStory">Hayat hikayeni anlatmak ister misin?</label><br/>
+    <textarea name="story" id="lifeStory" cols="50" rows="10" placeholder="Söyleyeceklerin önemli..."></textarea>
+</div>
+<button>Yolla</button>
+</form>
+<h2>Validations</h2>
+<form action="/spare">
+    <label for="first">İsim Giriniz:</label>
+    <input type="text" name="first" id="first" minlength="5" maxlength="25" required/>
+    <button>Submit</button>
+</form>
+</body>
+</html>
